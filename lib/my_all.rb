@@ -7,5 +7,9 @@ def my_all?(collection)
     new_arr.push(yield collection[i])
     i += 1
   end
-  new_arr
+  if new_arr.include(false)
+    false
+  else
+    true
+  end
 end
